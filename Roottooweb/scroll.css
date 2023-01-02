@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.body > .box{
+    /* border: 2px solid goldenrod; */
+    color:white;
+    width: 95%;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+    z-index:1;
+}
+.body > .box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.body > .box.show {
+    transform: translate(0);
+}
